@@ -1,19 +1,12 @@
 #include <stdio.h>
 
 int main() {
-    int i = 119;
-    if (i <= 30){
-        printf("免費");
+    int i = 3;
+    if (i & 1) {
+        printf("false");
     }
     else {
-        if (i%30) {
-            int h = ((i/30)+1) * 30;
-            printf("%d 元", h);
-        }
-        else {
-            printf("%d 元", i);
-        }
+        printf("true");
     }
-    
     return 0;
-}
+}  
